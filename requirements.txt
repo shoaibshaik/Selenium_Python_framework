@@ -1,0 +1,15 @@
+# Core dependencies
+selenium==4.19.0
+pytest==8.2.0
+
+# HTML report
+pytest-html==4.1.1
+
+# Allure report integration
+allure-pytest==2.13.2
+
+# Excel file handling for data-driven testing
+openpyxl==3.1.2
+
+# Optional: CLI enhancements and color output
+colorama==0.4.6
