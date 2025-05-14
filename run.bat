@@ -1,12 +1,18 @@
 @echo off
 
-:: Activate the virtual environment
-call venv\Scripts\activate.bat
+:: Create virtual env if needed
+if not exist ".venv\" (
+    python -m venv .venv
+)
 
-:: Optional: print Python location
-where python
+:: Activate the environment
+call .venv\Scripts\activate.bat
 
-:: Run the tests
-pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --browser chrome
+:: Install required packages
+pip install --upgrade pip
+pip install -r requirements.txt
+
+:: Run tests
+pytest -v -s -m "sanity" --html=Reports/report.html testCases/ --alluredir=allure-results
 
 pause
