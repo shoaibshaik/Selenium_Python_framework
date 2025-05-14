@@ -6,7 +6,7 @@ pytest==8.2.0
 pytest-html==4.1.1
 
 # Allure report integration
-allure-pytest==2.13.2
+#allure-pytest==2.13.2
 
 # Excel file handling for data-driven testing
 openpyxl==3.1.2

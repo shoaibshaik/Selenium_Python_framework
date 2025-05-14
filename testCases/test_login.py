@@ -17,7 +17,7 @@ class Test_001_Login:
         self.driver=setup
         self.driver.get(self.baseURL)
         act_title = self.driver.title
-        if act_title == "nopCommerce demo store. Login":
+        if act_title == "Swag Labs":
             assert True
             self.driver.close()
             self.logger.info('********************************    test_homePageTitle Passed   ********************************')
@@ -38,7 +38,7 @@ class Test_001_Login:
         self.lp.set_password(self.password)
         self.lp.click_login()
         act_title = self.driver.title
-        if act_title == "Dashboard / nopCommerce administration":
+        if act_title == "Swag Labs":
             assert True
             self.driver.close()
             self.logger.info('********************************    test_login Passed   ********************************')

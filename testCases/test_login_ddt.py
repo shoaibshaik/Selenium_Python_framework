@@ -48,7 +48,7 @@ class Test_002_DDT_Login:
             self.lp.set_username(self.user)
             self.lp.set_password(self.password)
             self.lp.click_login()
-            time.sleep(5)
+            time.sleep(2)
             act_url = self.driver.current_url
             expt_url = "https://www.saucedemo.com/inventory.html"
             if act_url == expt_url:
